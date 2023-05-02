@@ -10,8 +10,35 @@
 <MudSnackbarProvider />
 
 <MudLayout>
-    <MudAppBar Style="background-color: #38262f">
-        Care Dent
+    <MudAppBar Style="height: 50px">
+        <MudGrid Justify="Justify.FlexStart">
+            <MudItem Class="d-flex">
+                <MudImage Class="mr-2" Width="40" Height="40" Src="img/CareDent.png" Alt="CareDent Logo"></MudImage><MudText Style="color: #e23d74;" Typo="Typo.h4">CareDent</MudText>
+            </MudItem>
+        </MudGrid>
+        <MudGrid Justify="Justify.FlexEnd">
+            <MudItem Class="d-flex" Style="margin-top: 5px">
+                <MudIcon Icon="@Icons.Material.Filled.Phone" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">+359 884 512 650</MudText>
+            </MudItem>
+            <MudItem Class="d-flex" Style="margin-top: 5px">
+                <MudIcon Icon="@Icons.Material.Filled.LocationOn" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">ж.к.Дружба 1, ул. "Канала", бл.194, София</MudText>
+            </MudItem>
+            <MudItem>
+                <MudButton Variant="Variant.Filled" Style="border-radius: 10px; font-size: 13px; background-color: #6d2750">Записване за час</MudButton>
+            </MudItem>
+        </MudGrid>
+    </MudAppBar>
+    <MudAppBar Fixed="false" Style="background-color: rgba(56, 38, 47, 1); top: 50px">
+
+        <MudGrid Justify="Justify.FlexEnd">
+            <MudItem Class="d-flex">
+                <MudNavLink Style="font-size: 16px">Начало</MudNavLink>
+                <MudNavLink Style="font-size: 16px">За Нас</MudNavLink>
+                <MudNavLink Style="font-size: 16px">Услуги</MudNavLink>
+                <MudNavLink Style="font-size: 16px;">Случаи</MudNavLink>
+                <MudNavLink Style="font-size: 16px">Контакти</MudNavLink>
+            </MudItem>
+        </MudGrid>
     </MudAppBar>
     <MudMainContent>
         @Body
@@ -19,5 +46,32 @@
 </MudLayout>
 
 @code {
-    MudTheme MyCustomTheme = new MudTheme();
+    MudTheme MyCustomTheme = new MudTheme()
+        {
+            Palette = new PaletteDark()
+            {
+                Background = "#1a2026",
+                AppbarText = "#ffffffe3",
+                TextPrimary = "#fffffff0"
+            },
+            LayoutProperties = new LayoutProperties()
+            {
+                AppbarHeight = "50px"
+            },
+            Typography = new Typography()
+            {
+                Default = new Default()
+                {
+                    FontFamily = new string[] { "Nunito Sans", "Roboto", "Helvetica", "Arial", "sans-serif" }
+                },
+                Body1 = new Body1()
+                {
+                    FontFamily = new string[] { "Nunito Sans", "Roboto", "Helvetica", "Arial", "sans-serif" }
+                },
+                Overline = new Overline()
+                {
+                    FontFamily = new string[] { "Nunito Sans", "Roboto", "Helvetica", "Arial", "sans-serif" }
+                }
+            }
+        };
 }

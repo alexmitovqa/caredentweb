@@ -1,0 +1,39 @@
+﻿@using MudBlazor
+
+<MudCard>
+    <div class="d-flex justify-center">
+        <MudCardHeader><MudText Typo="Typo.h6">@Header</MudText></MudCardHeader>
+    </div>
+    <MudCardContent>
+        <MudImage Src="@ImgSource" Fluid="true" Elevation="3" Class="rounded-lg"></MudImage>
+        <div style="min-height: 180px">
+            @foreach (var item in ContentList)
+            {
+                <MudText Style="font-size: 17px">@ParseContentItem(item)</MudText>
+            }
+        </div>
+    </MudCardContent>
+    <MudDivider></MudDivider>
+    <MudCardActions>
+        <MudButton Variant="Variant.Outlined" Color="Color.Secondary">Научете повече</MudButton>
+    </MudCardActions>
+</MudCard>
+
+@code {
+    [Parameter]
+    public string Header { get; set; }
+
+    [Parameter]
+    public string ImgSource { get; set; }
+
+    [Parameter]
+    public string[] ContentList { get; set; }
+
+    [Parameter]
+    public string LearnMorePath { get; set; }
+
+    private string ParseContentItem(string item)
+    {
+        return $"- {item}";
+    }
+}
