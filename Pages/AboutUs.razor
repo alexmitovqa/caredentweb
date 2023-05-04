@@ -1,10 +1,10 @@
-﻿@page "/aboutus"
-@using MudBlazor
+﻿@using MudBlazor
 
-<MudImage Style="display: block; margin-top: 70px; margin-left: auto; margin-right: auto; width: 14%" Src="img/CareDent.png"></MudImage>
-<MudText Align="Align.Center" Style="color: #e23d74; font-size: 45px">CareDent</MudText>
+@*<MudImage Style="display: block; margin-top: 70px; margin-left: auto; margin-right: auto; width: 14%" Src="img/CareDent.png"></MudImage>
+<MudText Align="Align.Center" Style="color: #e23d74; font-size: 45px">CareDent</MudText>*@
 
-<MudContainer>
+<MudContainer Style="margin-bottom: 50px" MaxWidth="MaxWidth.ExtraLarge" id="aboutus">
+    <MudText Align="Align.Center" Style="font-size: 50px" Class="mt-10" Color="Color.Surface">За Нас</MudText>
     <MudGrid Justify="Justify.Center">
         <MudItem md="12">
             <MudText Style="font-size: 19px; line-height: 1.5; word-wrap: break-word; margin-top: 50px; text-indent: 40px">CareDent е модерен дентален център, чиято цел е да предостави на своите пациенти висококачествено лечение и съвременен подход. Ние имаме богат опит в областта на денталната медицина. Нашият приоритет е Вашето оптимално здраве. Стараем се да персонализираме нашето лечение според нуждите на всеки отделен пациент, като крайната ни цел е да постигнем възможно най-добрия резултат по отношение на вашето благополучие.</MudText>
@@ -55,10 +55,3 @@
         </MudItem>
     </MudGrid>
 </MudContainer>
-
-<div style="height: 500px">
-</div>
-
-@code {
-
-}

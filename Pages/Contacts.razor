@@ -1,0 +1,32 @@
+﻿@using MudBlazor
+
+@inject IJSRuntime JSRuntime
+
+<MudContainer Style="margin-bottom: 50px" MaxWidth="MaxWidth.ExtraLarge" id="contacts">
+    <MudText Align="Align.Center" Style="font-size: 50px" Class="my-10" Color="Color.Surface">Контакти</MudText>
+    <MudText Align="Align.Center">Моля използвайте най-удобният за Вас начин, за да се свържете с нас:</MudText>
+    <MudGrid Justify="Justify.Center" Style="margin-top: 30px">
+        <MudItem>
+            <MudList>
+                <MudListItem>
+                    <div class="d-flex">
+                        <MudIcon Icon="@Icons.Material.Filled.Phone" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">+359 884 512 650</MudText>
+                    </div>
+                </MudListItem>
+                <MudListItem>
+                    <div class="d-flex">
+                        <MudIcon Icon="@Icons.Material.Filled.LocationOn" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">ж.к.Дружба 1, ул. "Канала", бл.194, София</MudText>
+                    </div>
+                </MudListItem>
+                <MudListItem>
+                    <div class="d-flex">
+                        <MudIcon Icon="@Icons.Material.Filled.Mail" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">info@caredent.bg</MudText>
+                    </div>
+                </MudListItem>
+            </MudList>
+        </MudItem>
+        <div style="height: 300px; width: 400px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.921906097594!2d23.400871575907736!3d42.66301027116638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8788ac3faded%3A0x168604cf56661b80!2sCare%20Dent!5e0!3m2!1sen!2sbg!4v1683211427234!5m2!1sen!2sbg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </MudGrid>
+</MudContainer>

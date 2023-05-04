@@ -15,27 +15,26 @@
         <MudItem Class="d-flex">
             <MudImage Class="mr-2" Width="40" Height="40" Src="img/CareDent.png" Alt="CareDent Logo"></MudImage><MudText Style="color: #e23d74;" Typo="Typo.h4">CareDent</MudText>
         </MudItem>
-        <MudGrid Justify="Justify.FlexEnd">
+        <MudGrid Class="appbar-contact-info" Justify="Justify.FlexEnd">
             <MudItem Class="d-flex" Style="margin-top: 5px">
                 <MudIcon Icon="@Icons.Material.Filled.Phone" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">+359 884 512 650</MudText>
             </MudItem>
             <MudItem Class="d-flex" Style="margin-top: 5px">
                 <MudIcon Icon="@Icons.Material.Filled.LocationOn" Class="mr-2" Style="font-size: 20px; margin-top: 2px"></MudIcon><MudText Style="font-size: 16px">ж.к.Дружба 1, ул. "Канала", бл.194, София</MudText>
             </MudItem>
-            <MudItem>
+            <MudItem Class="d-none">
                 <MudButton Variant="Variant.Filled" Style="border-radius: 10px; font-size: 13px; background-color: #6d2750">Записване за час</MudButton>
             </MudItem>
         </MudGrid>
     </MudAppBar>
     <MudAppBar Style="background-color: rgba(56, 38, 47, 1); top: 50px">
-
         <MudGrid Justify="Justify.FlexEnd">
             <MudItem Class="d-flex">
-                <MudNavLink Style="font-size: 16px" Href="/">Начало</MudNavLink>
-                <MudNavLink Style="font-size: 16px" Href="/aboutus">За Нас</MudNavLink>
-                <MudNavLink Style="font-size: 16px" OnClick="@(async () => await ScrollToElementAsync("services"))">Услуги</MudNavLink>
-                <MudNavLink Style="font-size: 16px;">Случаи</MudNavLink>
-                <MudNavLink Style="font-size: 16px">Контакти</MudNavLink>
+                <MudNavLink Class="appbar-navlink" Style="font-size: 16px" OnClick="@(async () => await ScrollToElementAsync("home"))">Начало</MudNavLink>
+                <MudNavLink Class="appbar-navlink" Style="font-size: 16px" OnClick="@(async () => await ScrollToElementAsync("aboutus"))">За Нас</MudNavLink>
+                <MudNavLink Class="appbar-navlink" Style="font-size: 16px" OnClick="@(async () => await ScrollToElementAsync("services"))">Услуги</MudNavLink>
+                <MudNavLink Class="appbar-navlink" Style="font-size: 16px;">Случаи</MudNavLink>
+                <MudNavLink Class="appbar-navlink" Style="font-size: 16px" OnClick="@(async () => await ScrollToElementAsync("contacts"))">Контакти</MudNavLink>
             </MudItem>
         </MudGrid>
     </MudAppBar>

@@ -3,61 +3,17 @@
 @using MudBlazor
 
 <div style="position: relative; text-align: center">
-    <MudImage Src="img/smile-family.jpg" Fluid="true" Style="margin-top: 50px"></MudImage>
+    <MudImage Src="img/smile-family.jpg" Fluid="true" Style="margin-top: 50px" id="home"></MudImage>
     <div style="position: absolute; top: 4%; left: 32%; color: black">
         <MudText Style="font-size: 2.5vw">С грижа за Вас и Вашата усмивка!</MudText>
         <MudText Style="font-size: 1.5vw">Стараем се да я запазим, защото Тя е важна за Нас!</MudText>
     </div>
 </div>
 
-<MudContainer MaxWidth="MaxWidth.ExtraLarge" id="services">
-    <MudText Align="Align.Center" Style="font-size: 50px" Class="my-10" Color="Color.Surface">Услуги</MudText>
-    <MudGrid Justify="Justify.SpaceEvenly">
-        <MudItem lg="12">
-            <MudCard Style="border: 1px solid #ff518c; border-radius: 0; background-color: #1a2026">
-                <MudCardContent>
-                    <MudText Style="font-size: 18px">
-                        Ние в CareDent се стараем да предоставим дентално лечение на най-високо ниво, използвайки модерните технологии, с които разполагаме, за да го гарантираме. Знаем колко е важно здравето на зъбите, затова полагаме всички грижи, за да го запазим.
-                    </MudText>
-                </MudCardContent>
-            </MudCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Диагностика" ImgSource="img/x-ray-teeth.jpg" LearnMorePath="#" ContentList="diagnosticContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Естетична Дентална Медицина" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="esteticalMedicineContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Ендодонтия" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="endodontiaContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Орална Хирургия" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="oralHirurgiaContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Детска Дентална Медицина" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="childDentalContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Парадонтология" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="paradontologyContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Избелване на зъби" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="whiteningContent"></MainPageCard>
-        </MudItem>
-        <MudItem lg="3">
-            <MainPageCard Header="Имплантология" ImgSource="img/smiling-woman.jpg" LearnMorePath="#" ContentList="implantologyContent"></MainPageCard>
-        </MudItem>
-    </MudGrid>
-    <div style="height: 500px"></div>
-</MudContainer>
+<AboutUs></AboutUs>
+<DentalServices></DentalServices>
+<Contacts></Contacts>
 
-@code
-{
-    string[] diagnosticContent = new string[] {"Първичен преглед", "Анализ на зъбни снимки" };
-    string[] esteticalMedicineContent = new string[] { "Лечение на кариес", "Фасети", "Възстановяване чрез металокерамични, циркониеви и изцяло керамични корони и конструкции", "Бондинг" };
-    string[] endodontiaContent = new string[] { "Лечение на пулпит", "Лечение на периодонтит" };
-    string[] oralHirurgiaContent = new string[] { "Екстракция на зъби" };
-    string[] childDentalContent = new string[] { "Лечение на кариес на временни и постоянни зъби", "Лечение на пулпит и периодонтит на временни и постоянни зъби" };
-    string[] paradontologyContent = new string[] { "Почистване на зъбен камък и полиране на зъбите с AIRFLOW", "Лечение на гингивит", "Лечение на парадонтит", "Шинириане на зъбите" };
-    string[] whiteningContent = new string[] { "Избелване в клинични и домашни условия" };
-    string[] implantologyContent = new string[] { "Поставяне на зъбни имплантати и надимпантатно протезиране" };
-}
+<div style="margin: 1000px">
+
+</div>
