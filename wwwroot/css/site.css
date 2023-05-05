@@ -2,6 +2,10 @@ html, body {
     font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
 }
 
+.appbar-phone, .appbar-address {
+    display: flex;
+}
+
 @media only screen and (max-width: 600px) {
     .appbar-navlink .mud-nav-link {
         font-size: 14px !important;
@@ -12,6 +16,9 @@ html, body {
         margin: 0 12px 0 0 !important;
         padding: 0 !important;
     }
+
+    .appbar-appointment-button {
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -20,8 +27,14 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 680px) {
-    .appbar-contact-info {
+@media only screen and (max-width: 720px) {
+    .appbar-address {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .appbar-phone {
         display: none !important;
     }
 }
